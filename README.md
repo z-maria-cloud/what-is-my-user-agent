@@ -6,9 +6,9 @@ This is a very simple project I built to test my production server.
 
 To use:
 - Clone this repository
-- run "npm install" to install the dependencies
-- **Important**: you must specify the port by using the PROJECT_PORT environment variable
-- Remember to also set NODE_ENV=production: this alone should make Express at least 2 times faster!
+- Run "npm install" to install the dependencies
+- **Important**: by default runs on port 3000, you can customize the port number in package.json
 
-Usage example:
-`PROJECT_PORT=3000 NODE_ENV=production node index.js`
+Usage:
+- `npm run dev`: runs the server on port 3000
+- `npm run production`: runs the server on port 3000 while passing NODE_ENV=production
