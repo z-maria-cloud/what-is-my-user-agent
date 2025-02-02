@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is my User-Agent?</title>
+    <link rel="icon" href="icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        font-family: "Roboto Mono", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .center-box {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .m {
+        margin: 1rem 3rem;
+      }
+
+      .green {
+        font-weight: bold;
+        color: #0a0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center-box">
+      <h1 class="center m">⚙️ This is your User Agent ⚙️</h1>
+      <h2 class="center m green"><%= data %></h2>
+      <p class="center m">
+        This string is used by websites to know what kind of device and browser
+        is visiting.
+      </p>
+    </div>
+  </body>
+</html>
