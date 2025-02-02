@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "production": "PROJECT_PORT=3000 NODE_ENV=production node index.js",
-    "development": "PROJECT_PORT=3000 node index.js"
+    "dev": "PROJECT_PORT=3000 node index.js"
   },
   "author": "",
   "license": "ISC",
